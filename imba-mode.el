@@ -54,7 +54,7 @@
 
 
 (defface imba-function-name-face
-  '((t :foreground "Blue1" :weight bold))
+  '((t :foreground "RoyalBlue2" :weight bold))
   "Face for function parameters."
   :group 'imba )
 
@@ -64,12 +64,12 @@
   :group 'imba )
 
 (defface imba-keyword-face
-  '((t :foreground "DarkGreen" :weight bold))
+  '((t :foreground "PaleGreen4" :weight bold))
   "Face for function state."
   :group 'imba )
 
 (defface imba-string-variable-name-face
-  '((t :foreground "DarkRed" :weight bold))
+  '((t :foreground "IndianRed2" :weight bold))
   "Face for interpolation string."
   :group 'imba )
 
