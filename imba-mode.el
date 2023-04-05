@@ -69,7 +69,7 @@
   :group 'imba )
 
 (defface imba-string-variable-name-face
-  '((t :foreground "IndianRed2" :weight bold))
+  '((t :foreground "LightGoldenrod2" :weight bold))
   "Face for interpolation string."
   :group 'imba )
 
