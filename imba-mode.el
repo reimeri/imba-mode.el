@@ -73,6 +73,11 @@
   "Face for interpolation string."
   :group 'imba )
 
+(defface imba-string-type-face
+  '((t :foreground "LightGoldenrod2" :weight bold))
+  "Face for types."
+  :group 'imba )
+
 (defvar imba-highlights
   '(
     ("\\(^#\ .+\\)" . (1 font-lock-comment-face))
@@ -92,6 +97,7 @@
     ("\\([:][A-Za-z_][A-Za-z_0-9-]*\\)" . (1 font-lock-constant-face))
     ("\\([A-Za-z_][A-Za-z_0-9-]*[:\.][ \t]*\\)" . (1 font-lock-constant-face))
     ("\\([A-Za-z_][A-Za-z_0-9-]*\\)[:\.\(\[]" . (1 font-lock-variable-name-face))
+    ("\\([A-Za-z_][A-Za-z_0-9]*)" . (1 imba-string-type-face))
     ("\\b\\(return\\|def\\|tag\\|var\\|let\\|const\\|prop\\|new\\|or\\|and\\|not\\|if\\|unless\\|elif\\|else\\|when\\|for\\|until\\|while\\|do\\|map\\|class\\|setTimeout\\|setInterval\\|clearTimeout\\|clearInterval\\|parseInt\\|parseFloat\\|__dirname\\|process\\|console\\|document\\|window\\|this\\|then\\|in\\|self\\|delete\\)\\b" . (1 font-lock-function-name-face))
     ("\\b\\(attr\\|super\\|typeof\\|break\\|in\\|of\\|continue\\|as\\|from\\|render\\|unschedule\\|schedule\\|build\\|setup\\|mount\\|unmount\\|tikc\\\)\\b" . (1 font-lock-keyword-face))
     ("\\b\\(null\\|true\\|false\\|undefined\\|await\\|async\\)\\b" . (1 font-lock-constant-face))
